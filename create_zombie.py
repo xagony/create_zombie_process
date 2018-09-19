@@ -4,7 +4,7 @@ import time
 import psutil 
 from psutil._exceptions import NoSuchProcess
 
-ttl=1
+ttl=60
 
 zombie = Popen([''], shell=True)
 time.sleep(1)
