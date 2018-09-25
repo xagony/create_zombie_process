@@ -23,7 +23,7 @@ The first step is achieved by calling the os.fork() function, which creates a ch
 pid = os.fork()
 ```
 So now we have 2 separate processes executing the same code. The **pid** var value in the child process is 0 and in the parent process it is /child_pid/.  
-All the code after the os.fork() statement gets executed twice, however by knowing that pid of the child is 0, we can now control **what** code gets executed in **what** process:
+All the code after the os.fork() statement gets executed twice, however by knowing that the pid of the child is 0, we can now control **what** code gets executed by **what** process:
 ```
 if pid == 0:
   sys.exit(0)
